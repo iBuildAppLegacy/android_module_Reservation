@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ceffb2"
+              android:id="@+id/sergeyb_tablereservation_main_layout">
+
+    <!-- upcoming reservation notification -->
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:id="@+id/sergeyb_tablereservation_notification"
+                  android:background="@drawable/sergeyb_tablereservation_red_gradiend"
+                  android:gravity="center_vertical"
+                  android:visibility="gone">
+
+        <!-- header text -->
+        <TextView android:id="@+id/sergeyb_tablereservation_sharing_label"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_weight="1"
+                  android:textColor="#ffffff"
+                  android:textSize="14dp"
+                  android:text="@string/you_have_upcoming_reservation"
+                  android:gravity="center"
+                  android:paddingLeft="5dp"
+                  android:visibility="visible"/>
+
+        <!-- order list button -->
+        <LinearLayout android:layout_height="30dp"
+                      android:layout_width="wrap_content"
+                      android:orientation="horizontal"
+                      android:id="@+id/sergeyb_tablereservation_notification_button"
+                      android:background="@drawable/sergeyb_tablereservation_rounded_black"
+                      android:gravity="center_vertical|center_horizontal" android:layout_marginRight="10dp"
+                      android:layout_marginTop="3dp" android:layout_marginBottom="3dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view"
+                android:id="@+id/textView" android:textColor="#ffffff"
+                android:layout_marginRight="8dp" android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TableReservaton banner -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal|fill_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tablereservation_make_reservation"
+            android:id="@+id/sergeyb_tablereservation_title_text" android:textSize="20dp" android:layout_marginTop="10dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <!-- Date layout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/sergeyb_tablereservation_layoutDatePicker"
+        android:background="@drawable/sergeyb_tablereservation_row_first"
+        android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sergeyb_tablereservation_imageViewDate"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+            android:src="@drawable/sergeyb_tablereservation_calendar_img_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/sergeyb_tablereservation_date_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:textColor="#FFFFFF" android:textSize="16dp"/>
+    </LinearLayout>
+
+    <!-- Time layout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sergeyb_tablereservation_layoutTimePicker"
+        android:gravity="center_vertical" android:background="@drawable/sergeyb_tablereservation_row_middle"
+        android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sergeyb_tablereservation_imageViewTime"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+            android:src="@drawable/sergeyb_tablereservation_time_img_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/sergeyb_tablereservation_time_textview"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="19dp"
+            android:layout_centerVertical="true" android:textColor="#FFFFFF" android:textSize="16dp"/>
+    </LinearLayout>
+
+    <!-- Persons layout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sergeyb_tablereservation_layoutPersonPicker"
+        android:gravity="center_vertical" android:background="@drawable/sergeyb_tablereservation_row_last"
+        android:layout_marginRight="20dp" android:layout_marginLeft="20dp" android:baselineAligned="false">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sergeyb_tablereservation_imageViewPerson"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+            android:src="@drawable/sergeyb_tablereservation_persons_img_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/sergeyb_tablereservation_person_textview"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="19dp"
+            android:layout_centerVertical="true" android:textColor="#FFFFFF" android:textSize="16dp"/>
+    </LinearLayout>
+
+    <!-- Work houres -->
+
+    <!-- Submit layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sergeyb_tablereservation_submit_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/sergeyb_tablereservation_submit_button">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tablereservation_submit"
+            android:id="@+id/sergeyb_tablereservation_submit_text" android:layout_gravity="center" android:layout_marginTop="-5dp"
+            android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+

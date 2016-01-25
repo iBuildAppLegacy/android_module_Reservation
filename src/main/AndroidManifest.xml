@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibuildapp.romanblack.TableReservationPlugin">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application>
+        <activity android:name="TableReservationPlugin"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="TableReservationLogin"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationTwitterAuthorization"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservatoinFacebookAuthorization"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationModify"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationReservation"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationSpecialRequest"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationSummary"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationMap"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationMapRoute"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationEMailSignUpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservatioinListOfReservations"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="TableReservationPersonPicker"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+    </application>
+
+</manifest>

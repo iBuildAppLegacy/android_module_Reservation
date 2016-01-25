@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sergeyb_tablereservation_main_layout">
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/sergeyb_tablereservation_header"
+        android:id="@+id/sergeyb_tablereservation_content_holder"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sergeyb_tablereservation_info_layout"
+            android:layout_below="@+id/sergeyb_tablereservation_header"
+            android:layout_marginLeft="20dp" android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp" android:background="@drawable/sergeyb_tablereservation_back_transperant">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/sergeyb_tablereservation_restname_holder"
+                        android:layout_toLeftOf="@+id/sergeyb_tablereservation_map_holder"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:singleLine="false"
+                            android:id="@+id/sergeyb_tablereservation_restautant_name"
+                            android:textStyle="bold" android:layout_marginLeft="15dp" android:textSize="16dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/sergeyb_tablereservation_restautant_kitchen"
+                            android:layout_marginTop="10dp" android:layout_marginLeft="15dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/sergeyb_tablereservation_map_holder"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_weight="6" android:gravity="center_vertical|center_horizontal"
+                        android:layout_alignParentRight="true"
+                    >
+                        <WebView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/sergeyb_tablereservation_map"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="10dp"
+            >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sergeyb_tablereservation_address_pointer"
+                        android:text="@string/common_address_upper_colon"
+                        android:layout_gravity="center" android:layout_marginLeft="15dp"
+                        android:textStyle="bold" android:layout_alignParentRight="false"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asdkjfaskjfklaj  aslkjf  lkkaskldjf   a;lsjdf239o92ropa  asd;lkfjaslf"
+                    android:singleLine="false"
+                    android:id="@+id/sergeyb_tablereservation_address"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_parking_upper_colon"
+                        android:layout_gravity="center" android:layout_marginLeft="15dp"
+                        android:textStyle="bold" android:layout_alignParentRight="false"
+                        android:id="@+id/sergeyb_tablereservation_additional_pointer"
+
+                    />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asdkjfaskjfklaj "
+                    android:singleLine="false"
+                    android:id="@+id/sergeyb_tablereservation_additional"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/sergeyb_tablereservation_info_layout"
+            android:id="@+id/sergeyb_tablereservation_table_text" android:layout_gravity="left|center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/sergeyb_tablereservation_order_date"
+                android:layout_gravity="left|center_vertical" android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/sergeyb_tablereservation_persons"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+        <!-- footer with buttons -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="false"
+            android:layout_below="@+id/sergeyb_tablereservation_table_text"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp"
+            android:id="@+id/sergeyb_tablereservation_footer">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sergeyb_tablereservation_mail_calendar_holder">
+                <LinearLayout
+                    android:id="@+id/sergeyb_tablereservation_mail"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/sergeyb_tablereservation_grey_button"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_send_email_upper"
+                        android:textStyle="bold"
+                        android:textColor="#353535"
+                        android:shadowColor="#c0c1c1"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sergeyb_tablereservation_grey_button"
+                    android:id="@+id/sergeyb_tablereservation_calendar"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp" android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_add_to_calendar"
+                        android:textColor="#353535"
+                        android:shadowColor="#c0c1c1"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+
+                        android:textStyle="bold" android:layout_gravity="center" android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:id="@+id/sergeyb_tablereservation_direction"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/sergeyb_tablereservation_grey_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_get_direction"
+                        android:textColor="#353535"
+                        android:shadowColor="#c0c1c1"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textStyle="bold" android:layout_gravity="center"
+                        android:gravity="center|center_horizontal" android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sergeyb_tablereservation_ok"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/sergeyb_tablereservation_black_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_cancel_upper"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:shadowColor="#313232"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" android:layout_marginLeft="178dp">
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+        android:background="#000000">
+    
+    <!-- Header -->
+
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#f3f3f3">
+            
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:orientation="vertical"
+                      android:gravity="center_horizontal"
+                      android:background="#f3f3f3"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp">
+                
+            <EditText android:id="@+id/sergeyb_tablereservation_emailsignup_fname"
+                      android:layout_width="fill_parent"
+                      android:layout_height="55dp"
+                      android:layout_marginTop="30dp"
+                      android:textColorHint="#66000000"
+                      android:textColor="#66000000"
+                      android:lines="1"
+                      android:singleLine="true"
+                      android:hint="@string/common_firstname_upper"
+                      android:background="@android:drawable/editbox_background_normal"/>
+                
+            <EditText android:id="@+id/sergeyb_tablereservation_emailsignup_lname"
+                      android:layout_width="fill_parent"
+                      android:layout_height="55dp"
+                      android:textColorHint="#66000000"
+                      android:textColor="#66000000"
+                      android:background="@android:drawable/editbox_background_normal"
+                      android:lines="1"
+                      android:singleLine="true"
+                      android:hint="@string/common_lastname_upper"/>
+                
+            <EditText android:id="@+id/sergeyb_tablereservation_emailsignup_email"
+                      android:layout_width="fill_parent"
+                      android:textColorHint="#66000000"
+                      android:textColor="#66000000"
+                      android:background="@android:drawable/editbox_background_normal"
+                      android:lines="1"
+                      android:singleLine="true"
+                      android:layout_height="55dp" android:hint="@string/common_email_upper"/>
+                
+            <EditText android:id="@+id/sergeyb_tablereservation_emailsignup_pwd"
+                      android:layout_width="fill_parent"
+                      android:layout_height="55dp"
+                      android:layout_marginTop="25dp"
+                      android:background="@android:drawable/editbox_background_normal"
+                      android:textColorHint="#66000000"
+                      android:textColor="#66000000"
+                      android:lines="1"
+                      android:singleLine="true"
+                      android:password="true" android:hint="@string/common_password_upper"/>
+                
+            <EditText android:id="@+id/sergeyb_tablereservation_emailsignup_rpwd"
+                      android:layout_width="fill_parent"
+                      android:layout_height="55dp"
+                      android:password="true"
+                      android:background="@android:drawable/editbox_background_normal"
+                      android:textColorHint="#66000000"
+                      android:textColor="#66000000"
+                      android:lines="1"
+                      android:singleLine="true"
+                      android:hint="@string/common_confirm_password_upper"/>
+                
+            <LinearLayout android:id="@+id/sergeyb_tablereservation_emailsignup_layouttems"
+                          android:layout_width="fill_parent"
+                          android:layout_height="65dp"
+                          android:orientation="horizontal"
+                          android:gravity="center">
+                    
+                <TextView android:id="@+id/sergeyb_tablereservation_emailsignup_tvterms"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="@string/common_registration_agreement"/>
+                    
+                <CheckBox android:id="@+id/sergeyb_tablereservation_emailsignup_chbterms"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                    
+            </LinearLayout>
+            
+        </LinearLayout>
+    
+    </ScrollView>
+        
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sergeyb_tablereservation_time_layout_timePicker"  
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sergeyb_tablereservation_time_layout_timePicker">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_save_upper"
+            android:layout_weight="1"
+            android:id="@+id/sergeyb_tablereservation_time_layout_buttonSave"
+            android:layout_below="@+id/sergeyb_tablereservation_time_layout_timePicker"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/common_cancel_upper"
+            android:id="@+id/sergeyb_tablereservation_time_layout_buttonCancel"
+            android:layout_toRightOf="@+id/sergeyb_tablereservation_time_layout_buttonSave"/>
+    </LinearLayout>
+</RelativeLayout>

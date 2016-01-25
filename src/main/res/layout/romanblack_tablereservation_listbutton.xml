@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:id="@+id/image"
+           android:src="@drawable/sergeyb_tablereservation_edit_img"/>

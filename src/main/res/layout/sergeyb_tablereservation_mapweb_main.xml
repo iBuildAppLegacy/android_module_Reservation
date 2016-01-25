@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+        
+    <WebView android:id="@+id/sergeyb_tablereservation_mapweb_webview"
+             android:layout_height="fill_parent"
+             android:layout_width="wrap_content"
+             android:layout_weight="1"/>
+        
+    <com.ibuildapp.romanblack.TableReservationPlugin.TableReservationMapBottomPanel
+        android:id="@+id/sergeyb_tablereservation_mapweb_bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+                
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sergeyb_tablereservation_mapweb_back_to_my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/sergeyb_tablereservation_map_find_me_btn" />
+
+            <Button
+                android:id="@+id/sergeyb_tablereservation_mapweb_user_direction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/sergeyb_tablereservation_mapweb_back_to_my_location"
+                android:background="@drawable/sergeyb_tablereservation_map_getdirection_btn_9patch"
+                android:text="@string/tablereservation_show_direction"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+                    
+        </RelativeLayout>
+        
+    </com.ibuildapp.romanblack.TableReservationPlugin.TableReservationMapBottomPanel>
+    
+</LinearLayout>
+

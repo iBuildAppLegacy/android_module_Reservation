@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_name"
+        android:id="@+id/sergeyb_tablereservation_restaurant_name" android:textSize="24dp"
+        android:textStyle="bold" android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/looking_forward_to_see_you"
+        android:id="@+id/sergeyb_tablereservation_restaurant_greetings" android:textSize="16dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

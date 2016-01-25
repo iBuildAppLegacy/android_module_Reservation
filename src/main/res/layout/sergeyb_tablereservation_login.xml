@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             android:id="@+id/sergeyb_tablereservation_main_layout">
+
+    <!-- Header -->
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/sergeyb_tablereservation_header"
+                android:id="@+id/sergeyb_tablereservation_scrollView"
+                >
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/sergeyb_tablereservation_scroll_holder">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sergeyb_tablereservation_twitter_fb_holder"
+                            android:layout_weight="1">
+
+                        <RelativeLayout android:id="@+id/sergeyb_tablereservation_facebook_login"
+                                        android:layout_height="55dp"
+                                        android:layout_width="match_parent"
+                                        android:paddingTop="4dp"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:background="@drawable/dnevolin_facebook_button_background"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp">
+
+                            <ImageView android:layout_height="35dp"
+                                       android:layout_width="35dp"
+                                       android:layout_centerVertical="true"
+                                       android:src="@drawable/dnevolin_facebook_logo"/>
+
+                            <TextView android:layout_height="45dp"
+                                      android:layout_width="match_parent"
+                                      android:text="@string/common_login_with_facebook_upper"
+                                      android:textSize="18sp"
+                                      android:textStyle="bold"
+                                      android:textColor="@android:color/white"
+                                      android:gravity="center_vertical"
+                                      android:singleLine="true"
+                                      android:paddingLeft="60dp"
+                                      android:paddingRight="5dp"
+                                      android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout android:id="@+id/sergeyb_tablereservation_twitter_login"
+                                        android:layout_below="@id/sergeyb_tablereservation_facebook_login"
+                                        android:layout_height="55dp"
+                                        android:layout_width="fill_parent"
+                                        android:paddingTop="4dp"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:background="@drawable/dnevolin_twitter_button_background"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp">
+
+                            <ImageView android:layout_height="35dp"
+                                       android:layout_width="35dp"
+                                       android:layout_centerVertical="true"
+                                       android:src="@drawable/dnevolin_twitter_logo"/>
+
+                            <TextView android:layout_height="45dp"
+                                      android:layout_width="match_parent"
+                                      android:text="@string/common_login_with_twitter_upper"
+                                      android:textSize="18sp"
+                                      android:textStyle="bold"
+                                      android:textColor="@android:color/white"
+                                      android:gravity="center_vertical"
+                                      android:singleLine="true"
+                                      android:paddingLeft="60dp"
+                                      android:paddingRight="5dp"
+                                      android:layout_centerHorizontal="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sergeyb_tablereservation_ibuildapp_holder"
+                            android:layout_weight="1">
+                        <!-- ibuildapp sign in text -->
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sergeyb_tablereservation_appname_login"
+                                android:layout_below="@id/sergeyb_tablereservation_twitter_login"
+                                android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                            <TextView
+                                    android:id="@+id/sergeyb_tablereservation_singin_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/or_sign_in_to_app_name_account"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <!-- ibuildapp.com email edit -->
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/sergeyb_tablereservation_appname_login"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/sergeyb_tablereservation_ibuildapp_email"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/sergeyb_tablereservation_row_first"
+                                android:baselineAligned="false">
+                            <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center_vertical">
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/common_email_upper"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="10dp"
+                                        android:textSize="16dp" android:textStyle="bold" android:textColor="#000000"
+                                        android:id="@+id/sergeyb_tablereservation_email_textview"
+                                        />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical">
+                                <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/sergeyb_tablereservation_ibuildapp_email_editText"
+                                        android:textColor="#66000000"
+                                        android:layout_centerVertical="true" android:textSize="16dp"
+                                        android:layout_marginRight="10dp" android:inputType="textEmailAddress"
+                                        android:lines="1"
+                                        android:singleLine="true"
+                                        android:hint="@string/common_email_upper"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <!-- ibuildapp.com password edit -->
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/sergeyb_tablereservation_ibuildapp_email"
+                                android:id="@+id/sergeyb_tablereservation_ibuildapp_password"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/sergeyb_tablereservation_row_last">
+                            <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center_vertical">
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/common_password_upper"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="10dp"
+                                        android:textSize="16dp" android:textStyle="bold" android:textColor="#000000"
+                                        android:id="@+id/sergeyb_tablereservation_pass_textview"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical">
+                                <EditText
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/sergeyb_tablereservation_ibuildapp_pass_editText"
+                                        android:layout_centerVertical="true" android:textSize="16dp"
+                                        android:textColor="#66000000"
+                                        android:layout_marginRight="10dp" android:lines="1"
+                                        android:singleLine="true"
+                                        android:password="true" android:layout_marginTop="5dp"
+                                        android:hint="@string/common_password_upper"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <!-- ibuildapp.com login button -->
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sergeyb_tablereservation_ibuildapp_layout"
+                                android:layout_below="@id/sergeyb_tablereservation_ibuildapp_password"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp">
+                            <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:id="@+id/sergeyb_tablereservation_ibuildapp_login"
+                                    android:background="@drawable/sergeyb_tablereservation_signin_button"
+                                    android:layout_marginRight="10dp" android:layout_gravity="center_horizontal">
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tablereservation_login"
+                                        android:textSize="16dp"
+                                        android:textColor="#FFFFFF"
+                                        android:textStyle="bold"
+                                        android:layout_marginBottom="5dp"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:id="@+id/sergeyb_tablereservation_ibuildapp_signin"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:background="@drawable/sergeyb_tablereservation_submit_button"
+                                    android:layout_marginLeft="10dp">
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/common_sign_up_upper"
+                                        android:textSize="16dp"
+                                        android:textColor="#ffffff"
+                                        android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sergeyb_tablereservation_guest_holder"
+                            android:layout_weight="1"
+                            >
+                        <!-- reserve as a guest -->
+                        <RelativeLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/sergeyb_tablereservation_ibuildapp_layout"
+                                android:id="@+id/sergeyb_tablereservation_guest"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:clickable="false"
+                                android:background="@drawable/sergeyb_tablereservation_back_transperant_15alpha">
+
+                            <TextView
+                                    android:id="@+id/sergeyb_tablereservation_guest_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tablereservation_reserve_as_a_guest"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"/>
+                            <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/sergeyb_tablereservation_arrow"
+                                    android:layout_marginRight="10dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal" android:layout_marginTop="10dp"
+                        android:visibility="invisible">
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- bottom task bar -->
+    <LinearLayout android:layout_height="50dp"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:background="@drawable/sergeyb_tablereservation_action_bar_bg"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="5dp"
+                  android:visibility="invisible"
+                  android:id="@+id/sergeyb_tablereservation_bottom_taskbar"
+                  android:layout_alignParentBottom="false"
+                  android:paddingRight="5dp" android:layout_gravity="bottom">
+
+        <!-- clear button -->
+        <LinearLayout android:layout_height="30dp"
+                      android:layout_width="50dp"
+                      android:orientation="horizontal"
+                      android:id="@+id/sergeyb_tablereservation_clear_button"
+                      android:background="@drawable/sergeyb_tablereservation_iphone_button"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:visibility="invisible">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/common_clear_upper"
+                    android:textStyle="bold" android:textColor="#FFFFFF"
+                    android:textSize="12dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:gravity="right"
+                      android:visibility="invisible">
+
+            <TextView android:id="@+id/sergeyb_tablereservation_symbols_counter"
+                      android:layout_height="50dp"
+                      android:text="0/150"
+                      android:layout_width="wrap_content"
+                      android:paddingLeft="26dp"
+                      android:layout_weight="1"
+                      android:textColor="#ffffff"
+                      android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="30dp"
+                      android:layout_width="wrap_content"
+                      android:orientation="horizontal"
+                      android:id="@+id/sergeyb_tablereservation_hide_keyboard"
+                      android:background="@drawable/sergeyb_tablereservation_iphone_button_blue"
+                      android:gravity="center_vertical|center_horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/common_done_upper"
+                    android:textStyle="bold" android:textColor="#FFFFFF"
+                    android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

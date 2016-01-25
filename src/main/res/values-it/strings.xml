@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_date_upper">Data</string>
+    <string name="common_time_upper">Ora</string>
+    <string name="common_save_upper">Fine</string>
+    <string name="common_cancel_upper">Annula</string>
+    <string name="common_modify_upper">Modifica</string>
+    <string name="common_yes_upper">Yes</string>
+    <string name="common_no_upper">No</string>
+    <string name="common_loading_upper">Loading...</string>
+    <string name="common_registration_upper">Registration...</string>
+    <string name="common_home_upper">Home</string>
+    <string name="common_sign_up_upper">Sign Up</string>
+    <string name="common_sign_in_upper">Sign In</string>
+    <string name="common_back">Indietro</string>
+    <string name="common_back_upper">Indietro</string>
+    <string name="common_send_email_upper">Invia Email</string>
+    <string name="common_email_upper">Email:</string>
+    <string name="common_email_upper_colon">Email:</string>
+    <string name="common_password_upper">Password</string>
+    <string name="common_confirm_password_upper">Confermare la password</string>
+    <string name="common_log_in_upper">Login</string>
+    <string name="common_log_in_upper_colon">Login:</string>
+    <string name="common_sharing_first_part">just commented on</string>
+    <string name="common_sharing_second_part">image via</string>
+    <string name="common_sharing_third_part">download the iPhone/Android</string>
+    <string name="common_login_with_facebook_upper">Accedi con Facebook</string>
+    <string name="common_login_with_twitter_upper">Accedi con Twitter</string>
+    <string name="common__login_with_ibuildapp_upper">Accedi con iBuildApp</string>
+    <string name="common_login_with_email_upper">Login with Email</string>
+    <string name="common_emaillogin_use_email_upper">Use your e-mail to login</string>
+    <string name="common_seconds">seconds</string>
+    <string name="common_a_minute_ago">a minute ago</string>
+    <string name="common_minutes">minutes</string>
+    <string name="common_an_hour_ago">an hour ago</string>
+    <string name="common_hours">hours</string>
+    <string name="common_one_day">one day</string>
+    <string name="common_days">days</string>
+    <string name="common_date_just_now">Just now</string>
+    <string name="common_date_yesterday">Yesterday</string>
+    <string name="common_account">account</string>
+    <string name="common_tap_to_enter">Tap to enter</string>
+    <string name="common_clear_upper">Cancella</string>
+    <string name="common_done_upper">Fatto</string>
+    <string name="tablereservation_submit">Invia</string>
+    <string name="common_confirm_upper">Conferma</string>
+    <string name="common_address_upper_colon">Indirizzo:</string>
+    <string name="common_parking_upper_colon">Parcheggio:</string>
+    <string name="common_add_to_calendar">Scegli la data</string>
+    <string name="common_get_direction">Vai...</string>
+    <string name="tablereservation_common_date_upper">Data</string>
+    <string name="tablereservation_common_time_upper">Ora</string>
+    <string name="tablereservation_common_specify_upper">Specify</string>
+    <string name="common_firstname_upper">First name</string>
+    <string name="common_lastname_upper">Last name</string>
+    <string name="top_bar_right_button_text">Enter</string>
+    <string name="common_registration_agreement">By clicking on checkbox you are indicating that you have read and agree th the Terms of Use</string>
+    <string name="alert_no_internet">Cellular Data is Turned off. Turn on cellular data or use Wi-Fi to access data</string>
+    <string name="alert_cannot_init">Cannot initialize plugin</string>
+    <string name="alert_twitter_auth_error">Twitter authorization failed</string>
+    <string name="alert_facebook_auth_error">Facebook authorization failed</string>
+    <string name="alert_email_auth_error">Email authorization failed</string>
+    <string name="alert_not_logged_in">You are not logged in</string>
+    <string name="alert_invalid_email">Invalid email</string>
+    <string name="alert_gps_not_available">GPS service is not available</string>
+    <string name="alert_gps_initialization">Wait for initialization GPS service</string>
+    <string name="alert_gps_wrong_route">Cannot initialize route</string>
+
+    <string name="alert_registration_email_inuse">This email is in use. Please use another email</string>
+    <string name="alert_registration_fillin_fields">Fill in all the fields</string>
+    <string name="alert_registration_spam">First and Last name match each other. This seems like a spam, please change Last or First name</string>
+    <string name="alert_registration_two_symbols_name">Your name should have at least 2 characters</string>
+    <string name="alert_registration_two_symbols_password">Your password should have at least 2 characters</string>
+    <string name="alert_registration_correct_email">Please enter correct email address</string>
+    <string name="alert_registration_password_dont_match">Passwords don\'t match</string>
+    <string name="alert_registration_error">Regisitration error</string>
+
+    <string name="tablereservation_module">Table Reservation</string>
+    <string name="tablereservation_reservation">Reservation</string>
+    <string name="tablereservation_make_reservation">Prenota</string>
+    <string name="tablereservation_my_reservations">My Reservations</string>
+    <string name="tablereservation_upcoming">Prossime prenotazioni</string>
+    <string name="tablereservation_past">Vecchie prenotazioni</string>
+    <string name="tablereservation_no_reservations">>No prior reservations</string>
+    <string name="tablereservation_or_sign_up_first_part">Or sign up to</string>
+    <string name="tablereservation_reserve_as_a_guest">Prenota come ospite</string>
+    <string name="tablereservation_show_direction">Vai...</string>
+    <string name="tablereservation_reservation_details">Dettagli della prenotazione:</string>
+    <string name="tablereservation_contact_phone">Telefono:</string>
+    <string name="tablereservation_spec_request_enter">Inserisci la richiesta particolare:</string>
+    <string name="tablereservation_spec_request_add">Add Special Request</string>
+    <string name="tablereservation_spec_request">Special Request</string>
+    <string name="tablereservation_summary">Prenotazioni</string>
+    <string name="tablereservation_party_size">Numero di ospiti</string>
+    <string name="tablereservation_person">Persona</string>
+    <string name="tablereservation_persons">Persone</string>
+    <string name="tablereservation_party_of">Tavolo</string>
+    <string name="tablereservation_one_person">Persone</string>
+    <string name="tablereservation_guest">ospite</string>
+
+
+    <string name="tablereservation_warning_too_late">Too late. The Reservation could not be made at this time</string>
+    <string name="tablereservation_warning_wrong_time">The Reservation could not be made at this time</string>
+    <string name="tablereservation_warning_timeout">Unable connect to server</string>
+    <string name="tablereservation_warning_cancel_reservation">Are you sure you want to cancel the reservation?</string>
+    <string name="tablereservation_warning_reservation_canceled">La prenotazione è stata cancellata</string>
+
+    <string name="restaurant">Restaurant</string>
+    <string name="restaurant_name">Restaurant name</string>
+    <string name="you_have_upcoming_reservation">You have upcoming reservation</string>
+    <string name="your_reservation_details">Your reservation details:</string>
+
+    <string name="there_are_no_upcoming_reservations">There are no upcoming reservations</string>
+    <string name="username">User Name</string>
+    <string name="add_special_request">Aggiungi note</string>
+    <string name="or_sign_in_to_app_name_account">Sign in with email:</string>
+    <string name="clear">Cancella</string>
+    <string name="done">Fatto</string>
+    <string name="looking_forward_to_see_you">looking forward to see you!</string>
+    <string name="tap_to_enter">Tap to enter</string>
+    <string name="loading">Loading...</string>
+    <string name="table_for">Pervota per</string>
+    <string name="tablereservation_people_for">persone</string>
+    <string name="tablereservation_ampersand">" &amp; "</string>
+
+    <plurals name="orderForPersons">
+        <item quantity="zero">%d Persona</item>
+        <item quantity="one">%d Persona</item>
+        <item quantity="many">%d Persone</item>
+        <item quantity="other">%d Persone</item>
+        <item quantity="few">%d Persone</item>
+    </plurals>
+
+    <plurals name="orderTableForPerson">
+        <item quantity="zero">Tavolo per %d Persona</item>
+        <item quantity="one">Tavolo per %d Persona</item>
+        <item quantity="many">Tavolo per %d Persone</item>
+        <item quantity="other">Tavolo per %d Persone</item>
+        <item quantity="few">Tavolo per %d Persone</item>
+    </plurals>
+
+    <plurals name="tablereservation_persons_list">
+        <item quantity="zero">%d persona</item>
+        <item quantity="one">%d persona</item>
+        <item quantity="two">%d persone</item>
+        <item quantity="other">%d persone</item>
+        <item quantity="many">%d persone</item>
+        <item quantity="few">%d persone</item>
+    </plurals>
+
+</resources>

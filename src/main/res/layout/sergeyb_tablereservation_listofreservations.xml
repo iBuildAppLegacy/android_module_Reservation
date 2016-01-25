@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/sergeyb_tablereservation_main_layout">
+    <!-- Header -->
+
+    <!-- List of upcoming reservations HEADER -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" android:layout_gravity="left|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/sergeyb_tablereservation_list_item_gradient">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tablereservation_upcoming"
+            android:textColor="#FFFFFF" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:id="@+id/sergeyb_tablereservation_no_upcoming"
+        android:layout_height="30dp" android:layout_gravity="left|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sergeyb_tablereservation_no_upcoming_text"
+            android:text="@string/there_are_no_upcoming_reservations"
+            android:textColor="#FFFFFF" android:textStyle="bold"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sergeyb_tablereservation_upcoming" android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="2dp"/>
+
+
+    <!-- List of past reservations -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" android:layout_gravity="left|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/sergeyb_tablereservation_list_item_gradient">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tablereservation_past"
+            android:textColor="#FFFFFF" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:id="@+id/sergeyb_tablereservation_no_past"
+        android:layout_height="30dp" android:layout_gravity="left|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sergeyb_tablereservation_no_past_text"
+            android:text="@string/tablereservation_no_reservations"
+            android:textColor="#FFFFFF" android:textStyle="bold"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sergeyb_tablereservation_past"
+        android:layout_gravity="left|center_vertical" android:layout_marginTop="2dp"/>
+</LinearLayout>

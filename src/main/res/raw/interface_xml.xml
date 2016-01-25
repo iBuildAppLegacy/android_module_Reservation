@@ -1,0 +1,15 @@
+<data>
+    <restaurantname><![CDATA[FishSticks]]></restaurantname>
+    <restaurantgreeting><![CDATA[FishSticks is like a fish ... ]]></restaurantgreeting>
+    <restaurantadress><![CDATA[1065 E, Gukksdake, Foster City, 94010 CA]]></restaurantadress>
+    <latitude><![CDATA[28.42275]]></latitude>
+    <longitude><![CDATA[-81.47123]]></longitude>
+    <restaurantmail>6epreu@mail.ru</restaurantmail>
+    <restaurantphone>9607777777</restaurantphone>
+    <restaurantimageurl><![CDATA[http://ibuildapp.com/assets/data/00030/30557/317844/images/1361676940.png]]> </restaurantimageurl>
+    <starttime>07:00</starttime>
+    <endtime>23:00</endtime>
+    <timeoffset>30</timeoffset>
+    <maxpersons>6</maxpersons>
+    <restaurantadditional>valet</restaurantadditional>
+</data>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_date_upper">Дата</string>
+    <string name="common_time_upper">Время</string>
+    <string name="common_save_upper">Сохранить</string>
+    <string name="common_cancel_upper">Отмена</string>
+    <string name="common_modify_upper">Изменить</string>
+    <string name="common_yes_upper">Да</string>
+    <string name="common_no_upper">Нет</string>
+    <string name="common_loading_upper">Загрузка...</string>
+    <string name="common_registration_upper">Регистрация...</string>
+    <string name="common_home_upper">Домой</string>
+    <string name="common_sign_up_upper">Регистрация</string>
+    <string name="common_sign_in_upper">Войти</string>
+    <string name="common_back">Назад</string>
+    <string name="common_back_upper">Назад</string>
+    <string name="common_send_email_upper">Отправить email</string>
+    <string name="common_email_upper">Email</string>
+    <string name="common_email_upper_colon">Электронная почта</string>
+    <string name="common_password_upper">Пароль</string>
+    <string name="common_confirm_password_upper">Подтвердите пароль</string>
+    <string name="common_log_in_upper">Войти</string>
+    <string name="top_bar_right_button_text">Войти</string>
+    <string name="common_log_in_upper_colon">Войти</string>
+    <string name="common_sharing_first_part">только что добавлен комментарий</string>
+    <string name="common_sharing_second_part">Изображение через</string>
+    <string name="common_sharing_third_part">Загрузить через iPhone/Android</string>
+    <string name="common_login_with_facebook_upper">Войти через Facebook</string>
+    <string name="common_login_with_twitter_upper">Войти через Twitter</string>
+    <string name="common__login_with_ibuildapp_upper">Войти через iBuildApp</string>
+    <string name="common_login_with_email_upper">Войти через Email</string>
+    <string name="common_emaillogin_use_email_upper">Использовать email для входа</string>
+    <string name="common_seconds">секунд</string>
+    <string name="common_a_minute_ago">минуту назад</string>
+    <string name="common_minutes">минут</string>
+    <string name="common_an_hour_ago">час назад</string>
+    <string name="common_hours">часов</string>
+    <string name="common_one_day">день</string>
+    <string name="common_days">дней</string>
+    <string name="common_date_just_now">Сейчас</string>
+    <string name="common_date_yesterday">Вчера</string>
+    <string name="common_account">Аккаунт</string>
+    <string name="common_tap_to_enter">Нажмите для входа</string>
+    <string name="common_clear_upper">Очистить</string>
+    <string name="common_done_upper">Готово</string>
+    <string name="tablereservation_submit">Заказать</string>
+    <string name="common_confirm_upper">Подтвердить</string>
+    <string name="common_address_upper_colon">Адрес:</string>
+    <string name="common_parking_upper_colon">Парковка:</string>
+    <string name="common_add_to_calendar">Календарь</string>
+    <string name="common_get_direction">Маршрут</string>
+    <string name="tablereservation_common_date_upper">Дату</string>
+    <string name="tablereservation_common_time_upper">Время</string>
+    <string name="tablereservation_common_specify_upper">Укажите</string>
+    <string name="common_firstname_upper">Имя</string>
+    <string name="common_lastname_upper">Фамилия</string>
+    <string name="common_registration_agreement">Нажимая кнопку «Зарегистрироваться», Вы принимаете условия
+        Пользовательского соглашения.
+    </string>
+    <string name="alert_no_internet">Мобильный интернет отключен. Включите интернет, либо используйте WiFi</string>
+    <string name="alert_cannot_init">Невозможно инициализировать плагин</string>
+    <string name="alert_twitter_auth_error">Не удалось войти в Twitter</string>
+    <string name="alert_facebook_auth_error">Не удалось войти в Facebook</string>
+    <string name="alert_email_auth_error">Не удалось войти c помощью email</string>
+    <string name="alert_not_logged_in">Не удалось войти, используя предоставленные данные</string>
+    <string name="alert_invalid_email">некорректный email</string>
+    <string name="alert_gps_not_available">GPS недоступен</string>
+    <string name="alert_gps_initialization">Подождите, пока завершится инициализация GPS</string>
+    <string name="alert_gps_wrong_route">Невозможно проложить маршрут</string>
+    <string name="alert_registration_email_inuse">Данный email уже используется. Пожалуйста введите другой email
+    </string>
+    <string name="alert_registration_fillin_fields">Заполните все поля</string>
+    <string name="alert_registration_spam">Имя и Фамилия совпадают. Похоже на спам, пожалуйста, измените Имя либо
+        Фамилию
+    </string>
+    <string name="alert_registration_two_symbols_name">Имя должно содержать как минимум два символа</string>
+    <string name="alert_registration_two_symbols_password">Пароль должен содержать как минимум два символа</string>
+    <string name="alert_registration_correct_email">Введите корректный email</string>
+    <string name="alert_registration_password_dont_match">Пароли не совпадают</string>
+    <string name="alert_registration_error">Ошибка регистрации</string>
+
+    <string name="tablereservation_module">Заказ столика</string>
+    <string name="tablereservation_reservation">Заказ</string>
+    <string name="tablereservation_make_reservation">Сделать заказ</string>
+    <string name="tablereservation_my_reservations">Мои заказы</string>
+    <string name="tablereservation_upcoming">Заказы на ближайшее время</string>
+    <string name="tablereservation_past">История заказов</string>
+    <string name="tablereservation_no_reservations">История заказов пуста</string>
+    <string name="tablereservation_or_sign_up_first_part">Или зайти через</string>
+    <string name="tablereservation_reserve_as_a_guest">Заказать без регистрации</string>
+    <string name="tablereservation_show_direction">Показать маршрут</string>
+    <string name="tablereservation_reservation_details">Детали заказа</string>
+    <string name="tablereservation_contact_phone">Контактный телефон</string>
+    <string name="tablereservation_spec_request_enter">Уточните заказ</string>
+    <string name="tablereservation_spec_request_add">Добавить заказ</string>
+    <string name="tablereservation_spec_request">Заказ</string>
+    <string name="tablereservation_summary">Итого</string>
+    <string name="tablereservation_party_size">Количество человек</string>
+    <string name="tablereservation_person">человек</string>
+    <string name="tablereservation_persons">человек</string>
+    <string name="tablereservation_party_of">Заказ на</string>
+    <string name="tablereservation_one_person">человек</string>
+    <string name="tablereservation_guest">гость</string>
+    <string name="tablereservation_login_with_facebook_upper">Войти используя Facebook</string>
+    <string name="tablereservation_login_with_twitter_upper">Войти используя Twitter</string>
+    <string name="tablereservation_login">Войти</string>
+
+
+    <string name="tablereservation_warning_too_late">Заказ на это время невозможен</string>
+    <string name="tablereservation_warning_wrong_time">Заказать столик на это время невозможно</string>
+    <string name="tablereservation_warning_timeout">Невозможно подключиться к серверу</string>
+    <string name="tablereservation_warning_cancel_reservation">Вы уверены, что хотите отменить заказ?</string>
+    <string name="tablereservation_warning_reservation_canceled">Ваш заказ отменен</string>
+
+    <string name="restaurant_name">Название ресторана</string>
+    <string name="you_have_upcoming_reservation">У Вас есть заказы на ближайшее время</string>
+    <string name="your_reservation_details">Детали заказа</string>
+    <string name="there_are_no_upcoming_reservations">На ближайшее время заказов нет</string>
+    <string name="username">Имя пользователя</string>
+    <string name="add_special_request">уточнить заказ</string>
+    <string name="or_sign_in_to_app_name_account">Войти используя email:</string>
+    <string name="clear">Очистить</string>
+    <string name="restaurant">Ресторан</string>
+    <string name="done">Готово</string>
+    <string name="looking_forward_to_see_you">Ждем Вас с нетерпением!</string>
+    <string name="tap_to_enter">Нажмите для входа</string>
+    <string name="loading">Загрузка</string>
+    <string name="table_for">заказ на</string>
+    <string name="tablereservation_people_for">people</string>
+    <string name="tablereservation_ampersand">" и "</string>
+
+    <plurals name="orderForPersons">
+        <item quantity="zero">%d человек</item>
+        <item quantity="one">%d человека</item>
+        <item quantity="many">%d человек</item>
+        <item quantity="other">%d человек</item>
+        <item quantity="few">%d человека</item>
+    </plurals>
+
+    <plurals name="orderTableForPerson">
+        <item quantity="zero">Стол заказан на %d человек</item>
+        <item quantity="one">Стол заказан на %d человека</item>
+        <item quantity="many">Стол заказан на %d человек</item>
+        <item quantity="other">Стол заказан на %d человек</item>
+        <item quantity="few">Стол заказан на %d человека</item>
+    </plurals>
+
+    <plurals name="tablereservation_persons_list">
+        <item quantity="zero">%d человек</item>
+        <item quantity="one">%d человек</item>
+        <item quantity="two">%d человека</item>
+        <item quantity="other">%d человек</item>
+        <item quantity="many">%d человек</item>
+        <item quantity="few">%d человека</item>
+    </plurals>
+
+</resources>
