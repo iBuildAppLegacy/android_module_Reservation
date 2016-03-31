@@ -32,6 +32,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import com.appbuilder.sdk.android.AppBuilderModuleMain;
+import com.appbuilder.sdk.android.StartUpActivity;
 import com.appbuilder.sdk.android.Widget;
 import com.appbuilder.sdk.android.authorization.Authorization;
 import com.appbuilder.sdk.android.authorization.entities.User;
@@ -52,6 +53,7 @@ import java.util.Locale;
 /**
  * Main module class. Module entry point. Represents table reservation widget.
  */
+@StartUpActivity(moduleName = "Reservation")
 public class TableReservationPlugin extends AppBuilderModuleMain {
 
     private final int LOGIN_ACTIVITY = 10005;
