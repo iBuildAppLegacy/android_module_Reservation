@@ -10,6 +10,7 @@
 ****************************************************************************/
 package com.ibuildapp.romanblack.TableReservationPlugin;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -21,6 +22,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.http.SslError;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -28,6 +30,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.*;
@@ -186,7 +189,25 @@ public class TableReservationMap extends AppBuilderModule implements LocationLis
 
                         handler.sendEmptyMessage(HIDE_PROGRESS_DIALOG);
                     }
-
+                    @Override
+                    public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(TableReservationMap.this);
+                        builder.setMessage(R.string.notification_error_ssl_cert_invalid);
+                        builder.setPositiveButton(TableReservationMap.this.getResources().getString(R.string.on_continue), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                handler.proceed();
+                            }
+                        });
+                        builder.setNegativeButton(TableReservationMap.this.getResources().getString(R.string.on_cancel), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                handler.cancel();
+                            }
+                        });
+                        final AlertDialog dialog = builder.create();
+                        dialog.show();
+                    }
                     @Override
                     public void onPageStarted(WebView view, String url, Bitmap favicon) {
                         super.onPageStarted(view, url, favicon);

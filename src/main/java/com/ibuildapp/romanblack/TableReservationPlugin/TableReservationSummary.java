@@ -22,6 +22,7 @@ import android.graphics.*;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.http.SslError;
 import android.os.Handler;
 import android.os.Message;
 import android.text.Html;
@@ -31,6 +32,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.*;
@@ -336,6 +338,25 @@ public class TableReservationSummary extends AppBuilderModuleMain {
                 handler.sendEmptyMessage(SHOW_PROGRESS_DIALOG);
             }
 
+            @Override
+            public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
+                final AlertDialog.Builder builder = new AlertDialog.Builder(TableReservationSummary.this);
+                builder.setMessage(R.string.notification_error_ssl_cert_invalid);
+                builder.setPositiveButton(TableReservationSummary.this.getResources().getString(R.string.on_continue), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        handler.proceed();
+                    }
+                });
+                builder.setNegativeButton(TableReservationSummary.this.getResources().getString(R.string.on_cancel), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        handler.cancel();
+                    }
+                });
+                final AlertDialog dialog = builder.create();
+                dialog.show();
+            }
             @Override
             // callback which calls when page finish
             // @param url - url of web view page
