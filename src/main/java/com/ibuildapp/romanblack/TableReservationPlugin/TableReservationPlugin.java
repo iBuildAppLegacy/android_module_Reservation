@@ -200,16 +200,6 @@ public class TableReservationPlugin extends AppBuilderModuleMain {
             return;
         }
 
-        if (widget.getPluginXmlData().length() == 0) {
-            Toast.makeText(TableReservationPlugin.this, R.string.alert_cannot_init, Toast.LENGTH_LONG).show();
-            new Handler().postDelayed(new Runnable() {
-                public void run() {
-                    finish();
-                }
-            }, 5000);
-            return;
-        }
-
         if (widget.getTitle() != null && widget.getTitle().length() != 0) {
             setTopBarTitle(widget.getTitle());
         } else {
@@ -231,7 +221,7 @@ public class TableReservationPlugin extends AppBuilderModuleMain {
         personPickerImg = (ImageView) findViewById(R.id.sergeyb_tablereservation_imageViewPerson);
 
         // parse XML
-        EntityParser parser = new EntityParser(widget.getPluginXmlData());
+        EntityParser parser = new EntityParser(com.appbuilder.sdk.android.Utils.readXmlFromFile(widget.getPathToXmlFile()));
         parser.parse();
         parsedXML = parser.getTableReservationInfo();
 
