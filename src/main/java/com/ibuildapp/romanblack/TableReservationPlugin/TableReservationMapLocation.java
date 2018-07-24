@@ -10,14 +10,10 @@
 ****************************************************************************/
 package com.ibuildapp.romanblack.TableReservationPlugin;
 
-import com.google.android.maps.GeoPoint;
-
 /**
  * Entity class that represents map location.
  */
 public class TableReservationMapLocation {
-
-    private GeoPoint point = null;
     private String title = "";
     private String subtitle = "";
     private String description = "";
@@ -32,14 +28,6 @@ public class TableReservationMapLocation {
     public TableReservationMapLocation(double latitude, double longitude) {
         this.latitude = (int) (latitude * 1e6);
         this.longitude = (int) (longitude * 1e6);
-    }
-
-    /**
-     * Returns the location GeoPoint.
-     * @return the location GeoPoint
-     */
-    public GeoPoint getPoint() {
-        return point;
     }
 
     /**
